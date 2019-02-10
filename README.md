@@ -2,6 +2,19 @@
 > 基于Django：包含可拆卸 权限组件rbac 与 stark插件 可以单独取出代码并运用到任意后端开发项目中。 该套CRM系统就是用rbac组件+stark组件开发的《全国连锁烘焙学校管理系统》业务
 
 
+
+**权限菜单**
+![image](https://static.666.cq.cn/%E7%A7%81%E4%BA%BA/%E6%9D%83%E9%99%90%E5%88%9B%E5%BB%BA.png)
+
+**权限分配**
+![image](https://static.666.cq.cn/%E7%A7%81%E4%BA%BA/%E6%9D%83%E9%99%90%E5%88%86%E9%85%8D.png)
+
+**批量创建权限菜单**
+![image](https://static.666.cq.cn/%E7%A7%81%E4%BA%BA/%E6%89%B9%E9%87%8F%E5%88%9B%E5%BB%BA%E6%9D%83%E9%99%90%E8%8F%9C%E5%8D%95.png)
+
+**用户管理**
+![image](https://static.666.cq.cn/%E7%A7%81%E4%BA%BA/%E7%94%A8%E6%88%B7%E8%A1%A8.png)
+
 # 环境
 - Django 2.1.5
 - Python 3.5
@@ -45,7 +58,7 @@
 4. **应用rbac组件**
 
 
-# 开发准备
+# 准备流程
 > 流程:先通过stark组件完成业务开发，再套上rbac权限（stark放在rbac的app上）因为2个组件都有样式！可分离
 
 > 准备：创建项目>数据库迁移
