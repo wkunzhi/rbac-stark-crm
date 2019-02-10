@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+    <div class="luffy-container">
+        <form method="post">
+            {% csrf_token %}
+            {{ formset.management_form }}
+            <div style="margin: 5px 0">
+                <input type="submit" value="保存" class="btn btn-success">
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>考勤</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for form in formset %}
+                    <tr>
+                        {{ form.id }}
+                        <td>{{ form.instance.student }}</td>
+                        <td>{{ form.record }} <span style="color: red">{{ form.record.errors.0 }}</span></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </div>
+{% endblock %}
