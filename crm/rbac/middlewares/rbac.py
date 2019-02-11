@@ -17,7 +17,6 @@ class RbacMiddleware(MiddlewareMixin):
         :param request:
         :return:
         """
-
         """
         1. 获取当前用户请求的URL
         2. 获取当前用户在session中保存的权限列表 ['/customer/list/','/customer/list/(?P<cid>\\d+)/']
