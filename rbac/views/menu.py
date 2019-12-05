@@ -77,6 +77,12 @@ def menu_add(request):
 
 
 def menu_edit(request, pk):
+    """
+    修改菜单
+    :param request:
+    :param pk:
+    :return:
+    """
     obj = models.Menu.objects.filter(id=pk).first()
     if not obj:
         return HttpResponse('菜单不存在')
