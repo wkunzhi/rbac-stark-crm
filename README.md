@@ -1,3 +1,9 @@
+# 该项目已经废弃，请用升级版
+https://github.com/wkunzhi/CRM-Manage
+
+[**点击跳转**](https://github.com/wkunzhi/CRM-Manage)
+
+
 # CRM可拆卸后台管理系统
 > 基于Django：包含可拆卸 权限组件rbac 与 stark插件 可以单独取出代码并运用到任意后端开发项目中。 该套CRM系统就是用rbac组件+stark组件开发的《全国连锁烘焙学校管理系统》业务
 
